@@ -1,0 +1,495 @@
+fileFormatVersion: 2
+guid: 24d43a3526226b340a1fa095bcf1eed8
+timeCreated: 1447434199
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: playerLife1_orange
+    21300002: fire16
+    21300004: fire15
+    21300006: fire14
+    21300008: fire11
+    21300010: fire05
+    21300012: fire06
+    21300014: fire01
+    21300016: fire07
+    21300018: fire17
+    21300020: fire04
+    21300022: fire12
+    21300024: fire02
+    21300026: fire03
+    21300028: fire13
+    21300030: buttonRed
+    21300032: fire08
+    21300034: fire00
+    21300036: fire10
+    21300038: fire09
+    21300040: fire18
+    21300042: fire19
+    21300044: laserGreen11
+    21300046: laserRed01
+    21300048: playerShip1_orange
+    21300050: enemyGreen2
+    21300052: enemyBlack1
+    21300054: enemyBlue5
+    21300056: enemyRed3
+    21300058: darkPurple
+    21300060: blue
+    21300062: explosion07
+    21300064: explosion02
+    21300066: explosion00
+    21300068: explosion05
+    21300070: explosion01
+    21300072: explosion06
+    21300074: explosion08
+    21300076: explosion04
+    21300078: explosion03
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: .25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 8
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 4096
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: .5, y: .5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: playerLife1_orange
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 2021
+        width: 33
+        height: 26
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire16
+      rect:
+        serializedVersion: 2
+        x: 36
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire15
+      rect:
+        serializedVersion: 2
+        x: 52
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire14
+      rect:
+        serializedVersion: 2
+        x: 68
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire11
+      rect:
+        serializedVersion: 2
+        x: 84
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire05
+      rect:
+        serializedVersion: 2
+        x: 100
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire06
+      rect:
+        serializedVersion: 2
+        x: 116
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire01
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire07
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire17
+      rect:
+        serializedVersion: 2
+        x: 164
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire04
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 2016
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire12
+      rect:
+        serializedVersion: 2
+        x: 196
+        y: 2015
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire02
+      rect:
+        serializedVersion: 2
+        x: 212
+        y: 2015
+        width: 14
+        height: 32
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire03
+      rect:
+        serializedVersion: 2
+        x: 228
+        y: 2013
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire13
+      rect:
+        serializedVersion: 2
+        x: 244
+        y: 2013
+        width: 14
+        height: 34
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: buttonRed
+      rect:
+        serializedVersion: 2
+        x: 260
+        y: 2008
+        width: 222
+        height: 39
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire08
+      rect:
+        serializedVersion: 2
+        x: 484
+        y: 2007
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire00
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 2007
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2007
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire09
+      rect:
+        serializedVersion: 2
+        x: 538
+        y: 2007
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire18
+      rect:
+        serializedVersion: 2
+        x: 556
+        y: 2006
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: fire19
+      rect:
+        serializedVersion: 2
+        x: 574
+        y: 2006
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserGreen11
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 1993
+        width: 9
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: laserRed01
+      rect:
+        serializedVersion: 2
+        x: 603
+        y: 1993
+        width: 9
+        height: 54
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: playerShip1_orange
+      rect:
+        serializedVersion: 2
+        x: 614
+        y: 1972
+        width: 99
+        height: 75
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyGreen2
+      rect:
+        serializedVersion: 2
+        x: 715
+        y: 1963
+        width: 104
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlack1
+      rect:
+        serializedVersion: 2
+        x: 821
+        y: 1963
+        width: 93
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyBlue5
+      rect:
+        serializedVersion: 2
+        x: 916
+        y: 1963
+        width: 97
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: enemyRed3
+      rect:
+        serializedVersion: 2
+        x: 1015
+        y: 1963
+        width: 103
+        height: 84
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: darkPurple
+      rect:
+        serializedVersion: 2
+        x: 1120
+        y: 1791
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: blue
+      rect:
+        serializedVersion: 2
+        x: 1378
+        y: 1791
+        width: 256
+        height: 256
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explosion07
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 1268
+        width: 634
+        height: 521
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explosion02
+      rect:
+        serializedVersion: 2
+        x: 637
+        y: 1263
+        width: 620
+        height: 526
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explosion00
+      rect:
+        serializedVersion: 2
+        x: 1259
+        y: 1253
+        width: 583
+        height: 536
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explosion05
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 706
+        width: 572
+        height: 545
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explosion01
+      rect:
+        serializedVersion: 2
+        x: 575
+        y: 666
+        width: 634
+        height: 585
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explosion06
+      rect:
+        serializedVersion: 2
+        x: 1211
+        y: 661
+        width: 583
+        height: 590
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explosion08
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 69
+        width: 603
+        height: 590
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explosion04
+      rect:
+        serializedVersion: 2
+        x: 606
+        y: 41
+        width: 600
+        height: 618
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: explosion03
+      rect:
+        serializedVersion: 2
+        x: 1208
+        y: 23
+        width: 574
+        height: 636
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

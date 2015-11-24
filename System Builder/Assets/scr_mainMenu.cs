@@ -1,29 +1,24 @@
 ﻿using UnityEngine;
 using System.Collections;
+using UnityEngine.UI;
+using SimpleJSON;
 
 public class scr_mainMenu : MonoBehaviour {
-
+    public EngAGe engage;
     //GameID
-    private const int idSG = 213;
+    private const int idSG = 215;
+    //DisplayGameName
+    public Text txt_title;
 
-    // Use this for initialization
-    void Start () {
-	
-	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
-
-    public void OpenInfo()
-    {
-       /* // get the seriousGame object from engage
-        JSONNode SGdesc = EngAGe.E.getSG()["seriousGame"];
-        // display the title and description
+    void Start(){
+        // get the seriousGame object from engage 
+        JSONNode SGdesc = engage.getSG()["seriousGame"];
+        // display the title and description 
         txt_title.text = SGdesc["name"];
-        txt_description.text = SGdesc["description"];
-        // open the window
-        infoDialog.SetActive(!infoDialog.activeSelf);*/
+    }
+
+    //LogPlayerInAsGuestWithEngage
+    public void startGame(){
+        Application.LoadLevel("scene_playerInfo");
     }
 }

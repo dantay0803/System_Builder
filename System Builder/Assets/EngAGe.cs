@@ -9,7 +9,7 @@ using SimpleJSON;
 using System;
 
 public class EngAGe : MonoBehaviour {
-	
+
 	static public EngAGe E;
 		
 	private static int idStudent;

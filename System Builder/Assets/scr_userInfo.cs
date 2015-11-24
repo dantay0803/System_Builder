@@ -6,14 +6,14 @@ using SimpleJSON;
 public class scr_userInfo : MonoBehaviour {
     public EngAGe engage;
     //GameID
-    private const int idSG = 213;
-
+    private const int idSG = 215;
     //TextInputs
     public GameObject input_name;
     public GameObject input_age;
     public GameObject input_gender;
     public GameObject input_experience;
-
+    //DisplayGameName
+    public Text txt_title;
     //GetUserName
     string userName;
     //ConvertAgeToInt
@@ -22,6 +22,14 @@ public class scr_userInfo : MonoBehaviour {
     string userGender;
     //GetUserExperience
     string userExperience;
+
+    void Start()
+    {
+        // get the seriousGame object from engage 
+        JSONNode SGdesc = engage.getSG()["seriousGame"];
+        // display the title and description 
+        txt_title.text = SGdesc["name"];
+    }
 
     //GetUserName
     public void getUserName(){
@@ -39,22 +47,25 @@ public class scr_userInfo : MonoBehaviour {
     }
 
     //GetUserName
-    public void getUserExperience()
-    {
+    public void getUserExperience(){
         userExperience = input_experience.GetComponent<InputField>().text;
     }
 
 
     //SaveUserInfoBetweenLevels
     public void saveUserInfo(){
-        JSONNode param = engage.getParameters();
-        param.Add("Name", userName);
-
         PlayerPrefs.SetString("userName", userName);
         PlayerPrefs.SetString("userAge", userAge);
         PlayerPrefs.SetString("userGender", userGender);
         PlayerPrefs.SetString("userExp", userExperience);
         //Start Game
         Application.LoadLevel("scene_variables");
+    }
+
+
+
+    public void gotoMenu()
+    {
+        Application.LoadLevel("scene_mainMenu");
     }
 }
