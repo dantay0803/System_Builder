@@ -46,12 +46,12 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
+     <Compile Include="Assets\Code\EngAGe.cs" />
+     <Compile Include="Assets\Code\SimpleJSON.cs" />
      <Compile Include="Assets\Code\Variables\scr_variables.cs" />
-     <Compile Include="Assets\EngAGe.cs" />
-     <Compile Include="Assets\SimpleJSON.cs" />
-     <Compile Include="Assets\scr_loadUser.cs" />
-     <Compile Include="Assets\scr_mainMenu.cs" />
-     <Compile Include="Assets\scr_userInfo.cs" />
+     <Compile Include="Assets\Code\scr_loadUser.cs" />
+     <Compile Include="Assets\Code\scr_mainMenu.cs" />
+     <Compile Include="Assets\Code\scr_userInfo.cs" />
      <None Include="Assets\Audio\Credits.txt" />
      <None Include="Assets\codeandweb.com\Readme.txt" />
  <Reference Include="UnityEngine.UI">

@@ -5,7 +5,7 @@ public class scr_loadUser : MonoBehaviour {
 
     public EngAGe engage;
     //GameID
-    private const int idSG = 215;
+    private const int idSG = 231;
 
     void Awake()
     {

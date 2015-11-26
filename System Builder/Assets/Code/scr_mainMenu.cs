@@ -6,19 +6,20 @@ using SimpleJSON;
 public class scr_mainMenu : MonoBehaviour {
     public EngAGe engage;
     //GameID
-    private const int idSG = 215;
+    private const int idSG = 231;
     //DisplayGameName
     public Text txt_title;
 
-    void Start(){
-        // get the seriousGame object from engage 
-        JSONNode SGdesc = engage.getSG()["seriousGame"];
-        // display the title and description 
-        txt_title.text = SGdesc["name"];
+    void Awake()
+    {
+        //GetGameInfo
+        StartCoroutine(engage.getGameDesc(idSG));
     }
+
 
     //LogPlayerInAsGuestWithEngage
     public void startGame(){
-        Application.LoadLevel("scene_playerInfo");
+        //LogUserInAsGuest
+        StartCoroutine(engage.guestLogin(idSG, "scene_mainMenu", "scene_playerInfo"));
     }
 }

@@ -11,7 +11,7 @@ public class scr_variables : MonoBehaviour {
 
     public EngAGe engage;
     //GameID
-    private const int idSG = 215;
+    private const int idSG = 231;
 
     //CodeInputs
     public GameObject input_code;
@@ -35,15 +35,10 @@ public class scr_variables : MonoBehaviour {
 
 
     JSONNode feedback;
-    void Start()
-    {
+
+    void Start(){
         //GetFeedback
-
         feedback = engage.getFeedback()["seriousGame"];
-
-        // display the title and description 
-        Debug.Log("Feedback below");
-        Debug.Log(feedback);
     }
 
 
@@ -119,7 +114,7 @@ public class scr_variables : MonoBehaviour {
                                 ". If you remember the damage of your bullet is the same as your rank but that part of my system is gone so you will need to make it the length of your name.";
 
         //CodingInsturctions
-        txt_insturctions.text = "In C# you can use the  .length();  property to get the length of a sting, now get the length of your name using the string created last time." +
+        txt_insturctions.text = "In C# you can use the  .length();  property to get the length of a string, now get the length of your name using the string created last time." +
                                 "/n Tip the last string was called name.";
     }
 
