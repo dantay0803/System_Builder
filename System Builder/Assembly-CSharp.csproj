@@ -49,7 +49,6 @@
      <Compile Include="Assets\Code\EngAGe.cs" />
      <Compile Include="Assets\Code\SimpleJSON.cs" />
      <Compile Include="Assets\Code\Variables\scr_variables.cs" />
-     <Compile Include="Assets\Code\scr_loadUser.cs" />
      <Compile Include="Assets\Code\scr_mainMenu.cs" />
      <Compile Include="Assets\Code\scr_userInfo.cs" />
      <None Include="Assets\Audio\Credits.txt" />

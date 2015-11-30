@@ -11,7 +11,7 @@ public class scr_variables : MonoBehaviour {
 
     public EngAGe engage;
     //GameID
-    private const int idSG = 231;
+    private const int idSG = 248;
 
     //CodeInputs
     public GameObject input_code;

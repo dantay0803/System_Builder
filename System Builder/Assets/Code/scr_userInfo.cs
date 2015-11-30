@@ -6,7 +6,7 @@ using SimpleJSON;
 public class scr_userInfo : MonoBehaviour {
     public EngAGe engage;
     //GameID
-    private const int idSG = 231;
+    private const int idSG = 248;
     //TextInputs
     public GameObject input_name;
     public GameObject input_age;
@@ -47,7 +47,7 @@ public class scr_userInfo : MonoBehaviour {
         int loops = 0;
 
         //GetTheUserQuestions
-        foreach (JSONNode param in EngAGe.E.getParameters()){
+        foreach (JSONNode param in engage.getParameters()){
             //KeepTrackOfTheAmountOfLoopsToPlaceTheCorrectQuestionInTheCorrectTextBox
             if (loops == 0){
                 txt_QuestionName.text = param["question"];
@@ -96,14 +96,14 @@ public class scr_userInfo : MonoBehaviour {
         PlayerPrefs.SetString("userGender", userGender);
         PlayerPrefs.SetString("userExp", userExperience);
         //Start Game
-        StartCoroutine(EngAGe.E.startGameplay(idSG, "scene_variables"));
+        StartCoroutine(engage.startGameplay(idSG, "scene_variables"));
     }
 
     //SaveUserInfoToServer
     void saveUserInfoToAssestmentEngine(){
         int loops = 0;
         //LoopThroughUserParamaters
-        foreach(JSONNode param in EngAGe.E.getParameters()){
+        foreach(JSONNode param in engage.getParameters()){
             if(loops == 0){
                 param.Add("value", input_name.GetComponent<InputField>().text);
             }

@@ -6,7 +6,7 @@ using SimpleJSON;
 public class scr_mainMenu : MonoBehaviour {
     public EngAGe engage;
     //GameID
-    private const int idSG = 231;
+    private const int idSG = 248;
     //DisplayGameName
     public Text txt_title;
 
