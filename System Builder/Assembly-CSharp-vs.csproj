@@ -46,11 +46,19 @@
 	</Reference>
   </ItemGroup>
   <ItemGroup>
-     <Compile Include="Assets\Code\EngAGe.cs" />
-     <Compile Include="Assets\Code\SimpleJSON.cs" />
-     <Compile Include="Assets\Code\Variables\scr_variables.cs" />
-     <Compile Include="Assets\Code\scr_mainMenu.cs" />
-     <Compile Include="Assets\Code\scr_userInfo.cs" />
+     <Compile Include="Assets\Code\GlobalCode\EngAGe.cs" />
+     <Compile Include="Assets\Code\GlobalCode\SimpleJSON.cs" />
+     <Compile Include="Assets\Code\GlobalCode\scr_feedbackDisplay.cs" />
+     <Compile Include="Assets\Code\GlobalCode\scr_soundManager.cs" />
+     <Compile Include="Assets\Code\Menus\scr_mainMenu.cs" />
+     <Compile Include="Assets\Code\Menus\scr_userInfo.cs" />
+     <Compile Include="Assets\Code\TechingSections\scr_collisions.cs" />
+     <Compile Include="Assets\Code\TechingSections\scr_functions.cs" />
+     <Compile Include="Assets\Code\TechingSections\scr_ifStatements.cs" />
+     <Compile Include="Assets\Code\TechingSections\scr_playerInput.cs" />
+     <Compile Include="Assets\Code\TechingSections\scr_spawning.cs" />
+     <Compile Include="Assets\Code\TechingSections\scr_variables.cs" />
+     <Compile Include="Assets\Code\TechingSections\scr_vectors.cs" />
      <None Include="Assets\Audio\Credits.txt" />
      <None Include="Assets\codeandweb.com\Readme.txt" />
  <Reference Include="UnityEngine.UI">
