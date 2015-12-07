@@ -165,4 +165,117 @@ public class scr_feedbackDisplay : MonoBehaviour {
         //ShowFeedback
         showFeedback();
     }
+
+    //MessageToCheckIfStatement
+    public void MessageDeclareCheckIfStatement(){
+        //SetMessage
+        txt_feedback.text = "Check your if statement for errors";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckElseStatement
+    public void MessageDeclareCheckElseStatement(){
+        //SetMessage
+        txt_feedback.text = "Check your else statement for errors";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckDeltaTimeStatement
+    public void MessageDeclareCheckDeltaTime(){
+        //SetMessage
+        txt_feedback.text = "Check your Time.deltaTime declaration";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckVector2Statement
+    public void MessageDeclareCheckVectors(){
+        //SetMessage
+        txt_feedback.text = "Check your vector declaration";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckTransformPostionStatement
+    public void MessageDeclareCheckTransformPosition(){
+        //SetMessage
+        txt_feedback.text = "Did you correctly add the transform position correctly?";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckFunctionDecleration
+    public void MessageFunctionDeclareCheck(){
+        //SetMessage
+        txt_feedback.text = "Did you declare your function correctly?";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckFunctionName
+    public void MessageFunctionNameCheck(){
+        //SetMessage
+        txt_feedback.text = "Did you name your function correctly?";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckKeyCode
+    public void MessageKeyCodeCheck(){
+        //SetMessage
+        txt_feedback.text = "Did you use the correct key code?";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckInputProperty
+    public void MessageInputPropertyCheck(){
+        //SetMessage
+        txt_feedback.text = "Did you add the input.GetKeyDown property?";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckKeyCode
+    public void MessageDeclareCheck(){
+        //SetMessage
+        txt_feedback.text = "Did you use the correct key code? ";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckColliderParamater
+    public void MessageColliderParameterCheck(){
+        //SetMessage
+        txt_feedback.text = "Did you add in the collider parameter?";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckDestroyProperty
+    public void MessageDestroyPropertyCheck(){
+        //SetMessage
+        txt_feedback.text = "Did you include the destroy property?";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    //MessageToCheckObjectNameCheckStatement
+    public void MessageObjectNameCheck(){
+        //SetMessage
+        txt_feedback.text = "Did you add the object nanme check?";
+        //ShowFeedback
+        showFeedback();
+    }
+
+    /*//MessageToCheck    Statement
+    public void MessageDeclareCheck()
+    {
+        //SetMessage
+        txt_feedback.text = " ";
+        //ShowFeedback
+        showFeedback();
+    }*/
 }
