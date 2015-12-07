@@ -32,9 +32,50 @@ public class scr_ifStatements : MonoBehaviour
     public void checkCode()
     {
         //PlayButtonClick
-        scr_soundManager.instance.playButtonClick();
+        //scr_soundManager.instance.playButtonClick();
+        //GetUserCode
+        getCode();
         //setTheUserCodeAsAllLowerCase
         usersEnteredCode.ToLower();
+        //CheckChallenge
+        ifstatementChallenge();
+    }
+
+    //CheckAnswerToIfStatementChallage
+    void ifstatementChallenge(){
+        //CheckIntHasBeenDefined
+        if (usersEnteredCode.Contains("int")){
+            //CheckNameOFDamageVairable
+            if (usersEnteredCode.Contains("damage") && usersEnteredCode.Contains("0"))
+            {
+                //checkIfElseStatement
+                if(usersEnteredCode.Contains("if") && usersEnteredCode.Contains("else") && Regex.Matches(usersEnteredCode, "5").Count == 3 && usersEnteredCode.Contains("name.length()")){
+                    //CheckSyntax
+                    if (Regex.Matches(usersEnteredCode, "=").Count == 3 && Regex.Matches(usersEnteredCode, ";").Count == 3 && usersEnteredCode.Contains(">") && usersEnteredCode.Contains("(") &&
+                        usersEnteredCode.Contains(")") && Regex.Matches(usersEnteredCode, "{").Count == 2 && Regex.Matches(usersEnteredCode, "}").Count == 2){
+                        //MarkSectionAsCompleteIfAllCodeFound
+                        secttionComplete();
+                    }
+                    //DisplayFeedback
+                    else{
+                        scr_feedbackDisplay.instance.MessageCheckSyntax();
+                    }
+                }
+                //DisplayFeedback
+                else{
+                    scr_feedbackDisplay.instance.MessageDeclareCheckIfStatement();
+                }
+                
+            }
+            //DisplayFeedback
+            else{
+                scr_feedbackDisplay.instance.MessageVariableName();
+            }
+        }
+        //DisplayFeedback
+        else{
+            scr_feedbackDisplay.instance.MessageVariableType();
+        }
     }
 
 

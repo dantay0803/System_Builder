@@ -70,4 +70,14 @@ public class scr_soundManager : MonoBehaviour {
     {
         playMusic(snd_gameMusic);
     }
+
+    //CloseGame
+    void Update()
+    {
+        if (Input.GetKey("escape"))
+        {
+            Application.Quit();
+        }
+    }
+
 }

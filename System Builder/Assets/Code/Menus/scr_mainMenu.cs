@@ -21,6 +21,8 @@ public class scr_mainMenu : MonoBehaviour {
         StartCoroutine(engage.getGameDesc(idSG));
         //PlayMenuMusic
         scr_soundManager.instance.playMenuMusic();
+        //HideGameDescriptionObjectOnStartUp
+        hideDescription();
     }
 
     void Start(){
@@ -54,7 +56,7 @@ public class scr_mainMenu : MonoBehaviour {
             scr_soundManager.instance.playButtonClick();
         }
         //HideGameObjectOnStartUp
-        obj_gameDescription.transform.position = new Vector2(Screen.width / 2 - 1000, Screen.height / 2);
+        obj_gameDescription.transform.position = new Vector2(Screen.width / 2 - Screen.width, Screen.height / 2);
     }
 
     //DisplayDescriptionTextFromAssessmentEngine

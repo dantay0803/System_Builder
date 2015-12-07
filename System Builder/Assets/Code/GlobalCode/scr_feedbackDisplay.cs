@@ -50,7 +50,7 @@ public class scr_feedbackDisplay : MonoBehaviour {
     //HideFeedbackObject
     public void hideFeedbackObject(){
         //HideFeedbackPanel
-        this.gameObject.transform.position = new Vector2(Screen.width/2-1000, Screen.height/2);
+        this.gameObject.transform.position = new Vector2(Screen.width / 2 - Screen.width, Screen.height/2);
         //CheckIfSectionsAreCompleteToMoveOne
         if (variableSectionFinished && Application.loadedLevelName == "scene_variables"){
             Application.LoadLevel("scene_ifStatements");
