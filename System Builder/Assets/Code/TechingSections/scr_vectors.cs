@@ -32,10 +32,73 @@ public class scr_vectors : MonoBehaviour
     public void checkCode()
     {
         //PlayButtonClick
-        scr_soundManager.instance.playButtonClick();
+        //scr_soundManager.instance.playButtonClick();
+        //GetUserCode
+        getCode();
         //setTheUserCodeAsAllLowerCase
         usersEnteredCode.ToLower();
+        //CheckAnswer
+        vectorQuestion1();
     }
+
+
+
+    //CheckCorrectCodeForQuestion
+    void vectorQuestion1()
+    {
+        if (usersEnteredCode.Contains("float") && usersEnteredCode.Contains("vector2"))
+        {
+            if (Regex.Matches(usersEnteredCode, "obj_bulletspeed").Count == 2 && Regex.Matches(usersEnteredCode, "obj_bulletpos").Count == 3)
+            {
+                if (usersEnteredCode.Contains("0.5") && Regex.Matches(usersEnteredCode, "this.transform.position").Count == 2)
+                {
+                    if (usersEnteredCode.Contains("*"))
+                    {
+                        if(usersEnteredCode.Contains(".y"))
+                        {
+                            if (usersEnteredCode.Contains("time.deltatime"))
+                            {
+                                if (Regex.Matches(usersEnteredCode, ";").Count == 4 && Regex.Matches(usersEnteredCode, "=").Count == 4 && usersEnteredCode.Contains("+"))
+                                {
+                                    //MarkVectorSectionComplete
+                                    secttionComplete();
+                                }
+                                else
+                                {
+                                    scr_feedbackDisplay.instance.MessageCheckSyntax();
+                                }
+                            }
+                            else
+                            {
+                                scr_feedbackDisplay.instance.MessageDeclareCheckDeltaTime();
+                            }
+                        }
+                        else
+                        {
+                            scr_feedbackDisplay.instance.MessageDestroyPropertyCheck();
+                        }
+                    }
+                    else
+                    {
+                        scr_feedbackDisplay.instance.MessageDeclareCheckMathSymbol();
+                    }
+                }
+                else
+                {
+                    scr_feedbackDisplay.instance.MessageDeclareCheckVariableValues();
+                }
+            }
+            else
+            {
+                scr_feedbackDisplay.instance.MessageVariableName();
+            }
+        }
+        else
+        {
+            scr_feedbackDisplay.instance.MessageVariableType();
+        }
+    }
+
 
 
     //DisplayMessageToLetThePlayerKnowTheyCompletedTheStage

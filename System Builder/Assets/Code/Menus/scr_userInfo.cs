@@ -39,7 +39,7 @@ public class scr_userInfo : MonoBehaviour {
         //DisplayQuestionsForTheUser
         displayUserQuestions();
         //HiderErrorMessage
-        obj_errorDisplay.transform.position = new Vector2(Screen.width / 2 - 1000, Screen.height / 2);
+        obj_errorDisplay.transform.position = new Vector2(Screen.width / 2 - Screen.width, Screen.height / 2);
     }
 
     //DisplayQuestionForGuestLogIn
@@ -105,7 +105,7 @@ public class scr_userInfo : MonoBehaviour {
     public void hideErrorMessage(){
         //PlayButtonClick
         scr_soundManager.instance.playButtonClick();
-        obj_errorDisplay.transform.position = new Vector2(Screen.width / 2-1000, Screen.height / 2);
+        obj_errorDisplay.transform.position = new Vector2(Screen.width / 2 - Screen.width, Screen.height / 2);
     }
 
     //SaveUserInfoBetweenLevels

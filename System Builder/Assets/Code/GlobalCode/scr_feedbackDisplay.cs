@@ -72,6 +72,9 @@ public class scr_feedbackDisplay : MonoBehaviour {
         }
         if (collisionsSectionFinished && Application.loadedLevelName == "scene_collisions"){
             Application.LoadLevel("scene_bossFight");
+            //MarkGameWinAndGameComplete
+            StartCoroutine(engage.endGameplay(true));
+
         }
     }
 
@@ -82,6 +85,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //DiasplayAssessmentEngineFeedback
     public void UpdateFeedback(JSONArray feedbackReceived){
+        //SetTextColour
+        txt_feedback.color = Color.green;
         foreach (JSONNode f in feedbackReceived){
             //SetMessage
             txt_feedback.text = f["message"];
@@ -94,8 +99,12 @@ public class scr_feedbackDisplay : MonoBehaviour {
         UpdateFeedback(jsonReturned["feedback"].AsArray);
     }
 
+
+
     //MessageToShowQuestionCorrect
     public void MessageQuesstionCorrect(){
+        //SetTextColour
+        txt_feedback.color = Color.green;
         //SetMessage
         txt_feedback.text = "Well done!" + "\n" + "You got the question correct";
         //ShowFeedback
@@ -104,6 +113,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckVariableType
     public void MessageVariableType(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Have you defined the variable type?";
         //ShowFeedback
@@ -112,6 +123,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckVariableName
     public void MessageVariableName(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you set the name of the variable correctly?";
         //ShowFeedback
@@ -120,6 +133,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckSyntax
     public void MessageCheckSyntax(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Check your syntax";
         //ShowFeedback
@@ -128,6 +143,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckProperty
     public void MessageCheckProperty(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you type the property correctly?";
         //ShowFeedback
@@ -136,6 +153,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckWhitespace
     public void MessageCheckWhitespace(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Remove any excess spaces";
         //ShowFeedback
@@ -144,6 +163,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckWhitespace
     public void MessageDeclareAllVariables(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you declare all the variables?";
         //ShowFeedback
@@ -152,6 +173,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckWhitespace
     public void MessageDeclareCheckMathSymbol(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you enter the correct math symbol?";
         //ShowFeedback
@@ -160,6 +183,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckVariableValues
     public void MessageDeclareCheckVariableValues(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Check the values entered for the variables";
         //ShowFeedback
@@ -168,6 +193,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckIfStatement
     public void MessageDeclareCheckIfStatement(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Check your if statement for errors";
         //ShowFeedback
@@ -176,6 +203,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckElseStatement
     public void MessageDeclareCheckElseStatement(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Check your else statement for errors";
         //ShowFeedback
@@ -184,6 +213,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckDeltaTimeStatement
     public void MessageDeclareCheckDeltaTime(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Check your Time.deltaTime declaration";
         //ShowFeedback
@@ -192,6 +223,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckVector2Statement
     public void MessageDeclareCheckVectors(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Check your vector declaration";
         //ShowFeedback
@@ -200,6 +233,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckTransformPostionStatement
     public void MessageDeclareCheckTransformPosition(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you correctly add the transform position correctly?";
         //ShowFeedback
@@ -208,6 +243,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckFunctionDecleration
     public void MessageFunctionDeclareCheck(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you declare your function correctly?";
         //ShowFeedback
@@ -216,14 +253,29 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckFunctionName
     public void MessageFunctionNameCheck(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you name your function correctly?";
         //ShowFeedback
         showFeedback();
     }
 
+    //MessageToCheckFunctionCode
+    public void MessageFunctionCodeCheck()
+    {
+        //SetTextColour
+        txt_feedback.color = Color.red;
+        //SetMessage
+        txt_feedback.text = "Check your function code";
+        //ShowFeedback
+        showFeedback();
+    }
+
     //MessageToCheckKeyCode
     public void MessageKeyCodeCheck(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you use the correct key code?";
         //ShowFeedback
@@ -232,6 +284,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckInputProperty
     public void MessageInputPropertyCheck(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you add the input.GetKeyDown property?";
         //ShowFeedback
@@ -240,6 +294,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckKeyCode
     public void MessageDeclareCheck(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you use the correct key code? ";
         //ShowFeedback
@@ -248,6 +304,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckColliderParamater
     public void MessageColliderParameterCheck(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you add in the collider parameter?";
         //ShowFeedback
@@ -256,6 +314,8 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckDestroyProperty
     public void MessageDestroyPropertyCheck(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you include the destroy property?";
         //ShowFeedback
@@ -264,18 +324,31 @@ public class scr_feedbackDisplay : MonoBehaviour {
 
     //MessageToCheckObjectNameCheckStatement
     public void MessageObjectNameCheck(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
         txt_feedback.text = "Did you add the object nanme check?";
         //ShowFeedback
         showFeedback();
     }
 
-    /*//MessageToCheck    Statement
-    public void MessageDeclareCheck()
-    {
+    //MessageToCheckCheckInstantiateCode
+    public void MessageCheckInstantiateCode(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
         //SetMessage
-        txt_feedback.text = " ";
+        txt_feedback.text = "Check the instantiate code";
         //ShowFeedback
         showFeedback();
-    }*/
+    }
+
+    //MessageToCheckGameObjectDefined
+    public void MessageCheckGameObjectDefined(){
+        //SetTextColour
+        txt_feedback.color = Color.red;
+        //SetMessage
+        txt_feedback.text = "Did you define the game object correctly?";
+        //ShowFeedback
+        showFeedback();
+    }
 }

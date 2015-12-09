@@ -7,7 +7,8 @@ using System.Text;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 
-public class scr_functions : MonoBehaviour{
+public class scr_functions : MonoBehaviour
+{
 
     public EngAGe engage;
     //GameID
@@ -31,14 +32,72 @@ public class scr_functions : MonoBehaviour{
     public void checkCode()
     {
         //PlayButtonClick
-        scr_soundManager.instance.playButtonClick();
+        //scr_soundManager.instance.playButtonClick();
         //setTheUserCodeAsAllLowerCase
         usersEnteredCode.ToLower();
+        //GetUserInput
+        getCode();
+        //CheckCodeIsCorrect
+        functionChallenge();
+    }
+    void functionChallenge()
+    {
+
+        if (usersEnteredCode.Contains("bool"))
+        {
+            if (Regex.Matches(usersEnteredCode, "engine").Count >= 2)
+            {
+                if (usersEnteredCode.Contains("void") && usersEnteredCode.Contains("startengine"))
+                {
+                    if (usersEnteredCode.Contains("startenginecheck"))
+                    {
+                        if(usersEnteredCode.Contains("if(engine"))
+                        {
+                            if (Regex.Matches(usersEnteredCode, "false").Count == 2)
+                            {
+                                if (usersEnteredCode.Contains("=") && Regex.Matches(usersEnteredCode, ";").Count == 2 && Regex.Matches(usersEnteredCode, "()").Count >= 2 && Regex.Matches(usersEnteredCode, "{").Count == 2 && Regex.Matches(usersEnteredCode, "}").Count == 2 && usersEnteredCode.Contains("=="))
+                                {
+                                    sectionComplete();
+                                }
+                                else
+                                {
+                                    scr_feedbackDisplay.instance.MessageCheckSyntax();
+                                }
+                            }
+                            else
+                            {
+                                scr_feedbackDisplay.instance.MessageDeclareCheckVariableValues();
+                            }
+                        }
+                        else
+                        {
+                            scr_feedbackDisplay.instance.MessageDeclareCheckIfStatement();
+                        }
+                    }
+                    else
+                    {
+                        scr_feedbackDisplay.instance.MessageFunctionNameCheck();
+                    }
+                }
+                else
+                {
+                    scr_feedbackDisplay.instance.MessageFunctionDeclareCheck();
+                }
+            }
+            else
+            {
+                scr_feedbackDisplay.instance.MessageVariableName();
+            }
+        }
+        else
+        {
+            scr_feedbackDisplay.instance.MessageVariableType();
+        }
+
     }
 
-
     //DisplayMessageToLetThePlayerKnowTheyCompletedTheStage
-    void secttionComplete()
+    void sectionComplete()
     {
         //CheckOutcomes
         JSONNode vals = JSON.Parse("{\"status\" : \"" + "complete" + "\" }");
@@ -47,3 +106,4 @@ public class scr_functions : MonoBehaviour{
         scr_feedbackDisplay.instance.functionSectionFinished = true;
     }
 }
+
